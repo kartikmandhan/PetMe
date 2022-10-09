@@ -13,10 +13,12 @@ var header = document.getElementById("header");
 // var sticky = header.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset > 10) {
-    header.classList.add("add_border");
-  }
-  else {  
-    header.classList.remove("add_border");
+  if(header){
+    if (window.pageYOffset > 10) {
+      header.classList.add("add_border");
+    }
+    else {  
+      header.classList.remove("add_border");
+    }
   }
 }
